@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Football Team</title>
+</head>
+<body class="bg-gray-100">
+        <!-- Stylish Navbar -->
+        <nav class="bg-gradient-to-r from-blue-400 to-blue-700 shadow-lg sticky top-0 z-50">
+            <div class="max-w-6xl mx-auto px-4">
+                <div class="flex justify-between items-center h-16">
+                    <div class="flex items-center">
+                        <a class="flex-shrink-0 flex items-center" href="#">
+                            <img class="h-10 w-10 mr-2" src="public/image/logo.png" alt="Logo">
+                            <span class="text-white font-bold text-lg">Mystery Empire</span>
+                        </a>
+                        <div class="hidden md:block">
+                            <div class="ml-10 flex items-baseline space-x-4">
+                                <a href="#" class="text-white hover:bg-green-600 px-3 py-2 rounded-md text-sm font-medium transition duration-300">Home</a>
+                                <a href="players.html" class="text-blue-200 hover:bg-green-600 hover:text-white px-3 py-2 rounded-md text-sm font-medium transition duration-300">Players</a>
+                                <a href="#" class="text-blue-200 hover:bg-green-600 hover:text-white px-3 py-2 rounded-md text-sm font-medium transition duration-300">History</a>
+                                <a href="#" class="text-blue-200 hover:bg-green-600 hover:text-white px-3 py-2 rounded-md text-sm font-medium transition duration-300">Schedule</a>
+                                <a href="#" class="text-blue-200 hover:bg-green-600 hover:text-white px-3 py-2 rounded-md text-sm font-medium transition duration-300">About</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Mobile menu button with improved styling -->
+                    <div class="-mr-2 flex md:hidden">
+                        <button type="button" class="mobile-menu-button inline-flex items-center justify-center p-2 rounded-md text-blue-200 hover:text-white hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white transition duration-300">
+                            <span class="sr-only">Open main menu</span>
+                            <svg class="block h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!-- Mobile menu with improved styling -->
+            <div class="mobile-menu hidden md:hidden">
+                <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-blue-800">
+                    <a href="#" class="text-white block px-3 py-2 rounded-md text-base font-medium hover:bg-blue-600 transition duration-300">Home</a>
+                    <a href="players.html" class="text-blue-200 block px-3 py-2 rounded-md text-base font-medium hover:bg-blue-600 hover:text-white transition duration-300">Players</a>
+                    <a href="#" class="text-blue-200 block px-3 py-2 rounded-md text-base font-medium hover:bg-blue-600 hover:text-white transition duration-300">History</a>
+                    <a href="#" class="text-blue-200 block px-3 py-2 rounded-md text-base font-medium hover:bg-blue-600 hover:text-white transition duration-300">Schedule</a>
+                    <a href="#" class="text-blue-200 block px-3 py-2 rounded-md text-base font-medium hover:bg-blue-600 hover:text-white transition duration-300">About</a>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Hero Section with Background Image -->
+        <div class="relative bg-white">
+            <div class="h-[700px] bg-cover bg-center relative" style="background-image: url('public/image/mee.png');">
+                <div class="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center">
+                    <div class="text-center text-white">
+                        <h1 class="text-4xl md:text-6xl font-bold mb-4">Welcome to Mystery Empire</h1>
+                        <p class="text-xl md:text-2xl">Experience the passion of football</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        </div>
+
+    <!-- Team Stats Section -->
+    <section class="py-16 bg-gray-100">
+        <div class="max-w-6xl mx-auto px-4">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-12">Team Statistics</h2>
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div class="bg-white p-6 rounded-lg shadow-lg text-center">
+                    <div class="text-4xl font-bold text-blue-600 mb-2">100+</div>
+                    <div class="text-gray-600">Matches Won</div>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-lg text-center">
+                    <div class="text-4xl font-bold text-blue-600 mb-2">30+</div>
+                    <div class="text-gray-600">Team Members</div>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-lg text-center">
+                    <div class="text-4xl font-bold text-blue-600 mb-2">0</div>
+                    <div class="text-gray-600">Trophies</div>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-lg text-center">
+                    <div class="text-4xl font-bold text-blue-600 mb-2">28%</div>
+                    <div class="text-gray-600">Win Rate</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Upcoming Matches Section -->
+    <section class="py-16 bg-white">
+        <div class="max-w-6xl mx-auto px-4">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-12">Upcoming Matches</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-gray-50 p-6 rounded-lg shadow-lg">
+                    <div class="flex justify-between items-center mb-4">
+                        <div class="text-lg font-semibold">Mystery Empire</div>
+                        <div class="text-sm text-gray-500">VS</div>
+                        <div class="text-lg font-semibold">Team Alpha</div>
+                    </div>
+                    <div class="text-sm text-gray-600 text-center">Saturday, 15 July 2024</div>
+                    <div class="text-sm text-blue-600 text-center mt-2">Olympic Stadium</div>
+                </div>
+                <div class="bg-gray-50 p-6 rounded-lg shadow-lg">
+                    <div class="flex justify-between items-center mb-4">
+                        <div class="text-lg font-semibold">Team Beta</div>
+                        <div class="text-sm text-gray-500">VS</div>
+                        <div class="text-lg font-semibold">Mystery Empire</div>
+                    </div>
+                    <div class="text-sm text-gray-600 text-center">Sunday, 23 July 2024</div>
+                    <div class="text-sm text-blue-600 text-center mt-2">Downtown old</div>
+                </div>
+                <div class="bg-gray-50 p-6 rounded-lg shadow-lg">
+                    <div class="flex justify-between items-center mb-4">
+                        <div class="text-lg font-semibold">Mystery Empire</div>
+                        <div class="text-sm text-gray-500">VS</div>
+                        <div class="text-lg font-semibold">Team Gamma</div>
+                    </div>
+                    <div class="text-sm text-gray-600 text-center">Saturday, 30 July 2024</div>
+                    <div class="text-sm text-blue-600 text-center mt-2">T-Soccer</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+        <!-- Featured Players Section -->
+        <section class="py-16 bg-gray-100">
+            <div class="max-w-6xl mx-auto px-4">
+                <h2 class="text-3xl md:text-4xl font-bold text-center mb-4">Featured Players</h2>
+                <p class="text-gray-600 text-center mb-12 max-w-3xl mx-auto">Meet the stars who represent our club with pride and excellence</p>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                    <div class="bg-white rounded-lg shadow-lg overflow-hidden group hover:shadow-xl transition duration-300">
+                        <div class="w-full h-64 bg-cover bg-center transition duration-500 transform group-hover:scale-105" style="background-image: url('public/image/imgShow-7.jpg');"></div>
+                        <div class="p-6">
+                            <h3 class="text-xl font-semibold mb-2">Ly Meng</h3>
+                            <p class="text-gray-600 mb-3">Forward</p>
+                            <div class="flex items-center text-sm text-gray-500">
+                                <span class="mr-2">⚽</span>
+                                <span>Top Scorer</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bg-white rounded-lg shadow-lg overflow-hidden group hover:shadow-xl transition duration-300">
+                        <div class="w-full h-64 bg-cover bg-center transition duration-500 transform group-hover:scale-105" style="background-image: url('public/image/imgShow-2.jpg');"></div>
+                        <div class="p-6">
+                            <h3 class="text-xl font-semibold mb-2">Ra You</h3>
+                            <p class="text-gray-600 mb-3">Midfielder</p>
+                            <div class="flex items-center text-sm text-gray-500">
+                                <span class="mr-2">🏆</span>
+                                <span>Team Captain</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bg-white rounded-lg shadow-lg overflow-hidden group hover:shadow-xl transition duration-300">
+                        <div class="w-full h-64 bg-cover bg-center transition duration-500 transform group-hover:scale-105" style="background-image: url('public/image/imgShow-1.jpg');"></div>
+                        <div class="p-6">
+                            <h3 class="text-xl font-semibold mb-2">Lay Heang</h3>
+                            <p class="text-gray-600 mb-3">Defender</p>
+                            <div class="flex items-center text-sm text-gray-500">
+                                <span class="mr-2">🛡️</span>
+                                <span>Best Defender</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bg-white rounded-lg shadow-lg overflow-hidden group hover:shadow-xl transition duration-300">
+                        <div class="w-full h-64 bg-cover bg-center transition duration-500 transform group-hover:scale-105" style="background-image: url('public/image/imgShow-8.jpg');"></div>
+                        <div class="p-6">
+                            <h3 class="text-xl font-semibold mb-2">Kim Leng</h3>
+                            <p class="text-gray-600 mb-3">Goalkeeper</p>
+                            <div class="flex items-center text-sm text-gray-500">
+                                <span class="mr-2">🧤</span>
+                                <span>Most Clean Sheets</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-center mt-10">
+                    <a href="players.html" class="inline-block bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-6 rounded-lg transition duration-300">View All Players</a>
+                </div>
+            </div>
+        </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-8">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Mystery Empire</h3>
+                    <p class="text-gray-400">Your premier football team dedicated to excellence and sportsmanship.</p>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-white">Home</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Players</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Schedule</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Contact Us</h3>
+                    <p class="text-gray-400">Email: info@mysteryempire.com</p>
+                    <p class="text-gray-400">Phone: (123) 456-7890</p>
+                </div>
+            </div>
+            <div class="mt-8 pt-8 border-t border-gray-700 text-center text-gray-400">
+                <p>&copy; 2024 Mystery Empire. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        const mobileMenuButton = document.querySelector('.mobile-menu-button');
+        const mobileMenu = document.querySelector('.mobile-menu');
+
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>

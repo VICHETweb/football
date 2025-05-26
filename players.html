@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Players - Football Team</title>
+</head>
+<body class="bg-gray-100">
+     <!-- Stylish Navbar -->
+     <nav class="bg-gradient-to-r from-blue-400 to-blue-700 shadow-lg sticky top-0 z-50">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex items-center">
+                    <a class="flex-shrink-0 flex items-center" href="#">
+                        <img class="h-10 w-10 mr-2" src="public/image/logo.png" alt="Logo">
+                        <span class="text-white font-bold text-lg">Mystery Empire</span>
+                    </a>
+                    <div class="hidden md:block">
+                        <div class="ml-10 flex items-baseline space-x-4">
+                            <a href="index.html" class="text-white hover:bg-green-600 px-3 py-2 rounded-md text-sm font-medium transition duration-300">Home</a>
+                            <a href="players.html" class="text-blue-200 hover:bg-green-600 hover:text-white px-3 py-2 rounded-md text-sm font-medium transition duration-300">Players</a>
+                            <a href="#" class="text-blue-200 hover:bg-green-600 hover:text-white px-3 py-2 rounded-md text-sm font-medium transition duration-300">History</a>
+                            <a href="#" class="text-blue-200 hover:bg-green-600 hover:text-white px-3 py-2 rounded-md text-sm font-medium transition duration-300">Schedule</a>
+                            <a href="#" class="text-blue-200 hover:bg-green-600 hover:text-white px-3 py-2 rounded-md text-sm font-medium transition duration-300">About</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Mobile menu button with improved styling -->
+                <div class="-mr-2 flex md:hidden">
+                    <button type="button" class="mobile-menu-button inline-flex items-center justify-center p-2 rounded-md text-blue-200 hover:text-white hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white transition duration-300">
+                        <span class="sr-only">Open main menu</span>
+                        <svg class="block h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile menu with improved styling -->
+        <div class="mobile-menu hidden md:hidden">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-blue-800">
+                <a href="#" class="text-white block px-3 py-2 rounded-md text-base font-medium hover:bg-blue-600 transition duration-300">Home</a>
+                <a href="players.html" class="text-blue-200 block px-3 py-2 rounded-md text-base font-medium hover:bg-blue-600 hover:text-white transition duration-300">Players</a>
+                <a href="#" class="text-blue-200 block px-3 py-2 rounded-md text-base font-medium hover:bg-blue-600 hover:text-white transition duration-300">History</a>
+                <a href="#" class="text-blue-200 block px-3 py-2 rounded-md text-base font-medium hover:bg-blue-600 hover:text-white transition duration-300">Schedule</a>
+                <a href="#" class="text-blue-200 block px-3 py-2 rounded-md text-base font-medium hover:bg-blue-600 hover:text-white transition duration-300">About</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Player Categories -->
+    <div class="max-w-6xl mx-auto px-4 py-8">
+        <h1 class="text-3xl font-bold text-center mb-8">Our Players</h1>
+        
+       <!-- Category Filters -->
+<div class="flex flex-wrap justify-center gap-2 mb-8">
+    <button onclick="filterPlayers('all')" class="category-btn bg-blue-600 text-white px-4 py-2 rounded-md text-sm md:text-base whitespace-nowrap">All</button>
+    <button onclick="filterPlayers('goalkeeper')" class="category-btn bg-gray-200 text-gray-700 px-4 py-2 rounded-md text-sm md:text-base whitespace-nowrap">Goalkeepers</button>
+    <button onclick="filterPlayers('defender')" class="category-btn bg-gray-200 text-gray-700 px-4 py-2 rounded-md text-sm md:text-base whitespace-nowrap">Defenders</button>
+    <button onclick="filterPlayers('midfielder')" class="category-btn bg-gray-200 text-gray-700 px-4 py-2 rounded-md text-sm md:text-base whitespace-nowrap">Midfielders</button>
+    <button onclick="filterPlayers('forward')" class="category-btn bg-gray-200 text-gray-700 px-4 py-2 rounded-md text-sm md:text-base whitespace-nowrap">Forwards</button>
+</div>
+
+        <!-- Players Grid -->
+       <!-- Players Grid -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6" id="players-grid">
+    <!-- Goalkeeper -->
+    <div class="player-card defender bg-white rounded-lg shadow-lg overflow-hidden group hover:shadow-xl transition duration-300 cursor-pointer" onclick="showPlayerDetails(1)">
+        <div class="w-full h-64 bg-cover bg-center transition duration-500 transform group-hover:scale-105" style="background-image: url('public/image/imgShow-1.jpg');"></div>
+        <div class="p-6">
+            <h3 class="text-xl font-semibold mb-2">Lay Heang</h3>
+            <p class="text-gray-600 mb-3">ខ្សែបម្រើ</p>
+            <div class="flex items-center text-sm text-gray-500">
+                <span class="mr-2">#1</span>
+                <span>Defender</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Defender -->
+    <div class="player-card forward bg-white rounded-lg shadow-lg overflow-hidden group hover:shadow-xl transition duration-300 cursor-pointer" onclick="showPlayerDetails(2)">
+        <div class="w-full h-64 bg-cover bg-center transition duration-500 transform group-hover:scale-105" style="background-image: url('public/image/imgShow-2.jpg');"></div>
+        <div class="p-6">
+            <h3 class="text-xl font-semibold mb-2">Ra You</h3>
+            <p class="text-gray-600 mb-3">ខ្សែប្រយុទ្ឌ</p>
+            <div class="flex items-center text-sm text-gray-500">
+                <span class="mr-2">#2</span>
+                <span>Forward</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Midfielder -->
+    <div class="player-card forward bg-white rounded-lg shadow-lg overflow-hidden group hover:shadow-xl transition duration-300 cursor-pointer" onclick="showPlayerDetails(3)">
+        <div class="w-full h-64 bg-cover bg-center transition duration-500 transform group-hover:scale-105" style="background-image: url('public/image/imgShow-3.jpg');"></div>
+        <div class="p-6">
+            <h3 class="text-xl font-semibold mb-2">David</h3>
+            <p class="text-gray-600 mb-3">ខ្សែប្រយុទ្ឌ</p>
+            <div class="flex items-center text-sm text-gray-500">
+                <span class="mr-2">#3</span>
+                <span>Forward</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Forward -->
+    <div class="player-card defender bg-white rounded-lg shadow-lg overflow-hidden group hover:shadow-xl transition duration-300 cursor-pointer" onclick="showPlayerDetails(4)">
+        <div class="w-full h-64 bg-cover bg-center transition duration-500 transform group-hover:scale-105" style="background-image: url('public/image/imgShow-4.jpg');"></div>
+        <div class="p-6">
+            <h3 class="text-xl font-semibold mb-2">Hong Chhay</h3>
+            <p class="text-gray-600 mb-3">ខ្សែបម្រើ</p>
+            <div class="flex items-center text-sm text-gray-500">
+                <span class="mr-2">#4</span>
+                <span>Defender</span>
+            </div>
+        </div>
+    </div>
+    
+    <div class="player-card forward bg-white rounded-lg shadow-lg overflow-hidden group hover:shadow-xl transition duration-300 cursor-pointer" onclick="showPlayerDetails(5)">
+        <div class="w-full h-64 bg-cover bg-center transition duration-500 transform group-hover:scale-105" style="background-image: url('public/image/imgShow-5.jpg');"></div>
+        <div class="p-6">
+            <h3 class="text-xl font-semibold mb-2">Ma Neth</h3>
+            <p class="text-gray-600 mb-3">ខ្សែប្រយុទ្ឌ</p>
+            <div class="flex items-center text-sm text-gray-500">
+                <span class="mr-2">#5</span>
+                <span>Forward</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Forward -->
+    <div class="player-card forward bg-white rounded-lg shadow-lg overflow-hidden group hover:shadow-xl transition duration-300 cursor-pointer" onclick="showPlayerDetails(6)">
+        <div class="w-full h-64 bg-cover bg-center transition duration-500 transform group-hover:scale-105" style="background-image: url('public/image/imgShow-6.jpg');"></div>
+        <div class="p-6">
+            <h3 class="text-xl font-semibold mb-2">Na Roth</h3>
+            <p class="text-gray-600 mb-3">ខ្សែប្រយុទ្ឌ</p>
+            <div class="flex items-center text-sm text-gray-500">
+                <span class="mr-2">#6</span>
+                <span>Forward</span>
+            </div>
+        </div>
+    </div>
+    
+    <div class="player-card forward bg-white rounded-lg shadow-lg overflow-hidden group hover:shadow-xl transition duration-300 cursor-pointer" onclick="showPlayerDetails(7)">
+        <div class="w-full h-64 bg-cover bg-center transition duration-500 transform group-hover:scale-105" style="background-image: url('public/image/imgShow-7.jpg');"></div>
+        <div class="p-6">
+            <h3 class="text-xl font-semibold mb-2">Ly Meng</h3>
+            <p class="text-gray-600 mb-3">ខ្សែប្រយុទ្ឌ</p>
+            <div class="flex items-center text-sm text-gray-500">
+                <span class="mr-2">#7</span>
+                <span>Forward</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Forward -->
+    <div class="player-card goalkeeper bg-white rounded-lg shadow-lg overflow-hidden group hover:shadow-xl transition duration-300 cursor-pointer" onclick="showPlayerDetails(8)">
+        <div class="w-full h-64 bg-cover bg-center transition duration-500 transform group-hover:scale-105" style="background-image: url('public/image/imgShow-8.jpg');"></div>
+        <div class="p-6">
+            <h3 class="text-xl font-semibold mb-2">Kim Leng</h3>
+            <p class="text-gray-600 mb-3">អ្នកចាំទី</p>
+            <div class="flex items-center text-sm text-gray-500">
+                <span class="mr-2">#8</span>
+                <span>Goalkeeper</span>
+            </div>
+        </div>
+    </div>
+</div>
+
+    <!-- Player Details Modal -->
+    <div id="player-modal" class="fixed inset-0 bg-black bg-opacity-50 hidden flex items-center justify-center">
+        <div class="bg-white rounded-lg max-w-2xl w-full mx-4">
+            <div class="p-6">
+                <div class="flex justify-between items-start mb-4">
+                    <h2 class="text-2xl font-bold" id="modal-player-name">Player Name</h2>
+                    <button onclick="closePlayerDetails()" class="text-gray-500 hover:text-gray-700">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                        </svg>
+                    </button>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <img id="modal-player-image" src="" alt="Player" class="w-full h-64 object-cover rounded-lg">
+                    <div>
+                        <p class="mb-2"><span class="font-semibold">Position:</span> <span id="modal-player-position"></span></p>
+                        <p class="mb-2"><span class="font-semibold">Number:</span> <span id="modal-player-number"></span></p>
+                        <p class="mb-2"><span class="font-semibold">Age:</span> <span id="modal-player-age"></span></p>
+                        <p class="mb-2"><span class="font-semibold">Nationality:</span> <span id="modal-player-nationality"></span></p>
+                        <p class="mb-2"><span class="font-semibold">Experience:</span> <span id="modal-player-experience"></span></p>
+                    </div>
+                </div>
+                <div class="mt-4">
+                    <h3 class="font-semibold mb-2">Statistics</h3>
+                    <div class="grid grid-cols-2 gap-4">
+                        <div class="bg-gray-100 p-3 rounded">
+                            <p class="text-sm text-gray-600">Matches Played</p>
+                            <p class="text-xl font-bold" id="modal-player-matches">0</p>
+                        </div>
+                        <div class="bg-gray-100 p-3 rounded">
+                            <p class="text-sm text-gray-600">Goals/Clean Sheets</p>
+                            <p class="text-xl font-bold" id="modal-player-goals">0</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+ <!-- Footer -->
+ <footer class="bg-gray-800 text-white py-8">
+    <div class="max-w-6xl mx-auto px-4">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div>
+                <h3 class="text-xl font-bold mb-4">Mystery Empire</h3>
+                <p class="text-gray-400">Your premier football team dedicated to excellence and sportsmanship.</p>
+            </div>
+            <div>
+                <h3 class="text-xl font-bold mb-4">Quick Links</h3>
+                <ul class="space-y-2">
+                    <li><a href="#" class="text-gray-400 hover:text-white">Home</a></li>
+                    <li><a href="#" class="text-gray-400 hover:text-white">Players</a></li>
+                    <li><a href="#" class="text-gray-400 hover:text-white">Schedule</a></li>
+                    <li><a href="#" class="text-gray-400 hover:text-white">Contact</a></li>
+                </ul>
+            </div>
+            <div>
+                <h3 class="text-xl font-bold mb-4">Contact Us</h3>
+                <p class="text-gray-400">Email: info@mysteryempire.com</p>
+                <p class="text-gray-400">Phone: (123) 456-7890</p>
+            </div>
+        </div>
+        <div class="mt-8 pt-8 border-t border-gray-700 text-center text-gray-400">
+            <p>&copy; 2024 Mystery Empire. All rights reserved.</p>
+        </div>
+    </div>
+</footer>
+    <script>
+          // Mobile menu toggle
+          const mobileMenuButton = document.querySelector('.mobile-menu-button');
+        const mobileMenu = document.querySelector('.mobile-menu');
+
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+        // Filter players by category
+        function filterPlayers(category) {
+            const buttons = document.querySelectorAll('.category-btn');
+            buttons.forEach(btn => btn.classList.remove('bg-blue-600', 'text-white'));
+            buttons.forEach(btn => btn.classList.add('bg-gray-200', 'text-gray-700'));
+            event.target.classList.remove('bg-gray-200', 'text-gray-700');
+            event.target.classList.add('bg-blue-600', 'text-white');
+
+            const cards = document.querySelectorAll('.player-card');
+            cards.forEach(card => {
+                if (category === 'all' || card.classList.contains(category)) {
+                    card.style.display = 'block';
+                } else {
+                    card.style.display = 'none';
+                }
+            });
+        }
+
+        // Player details modal
+        const playerData = {
+            1: {
+                name: 'Lay heang',
+                position: 'ខ្សែបម្រើ',
+                number: '1',
+                age: '25',
+                nationality: 'England',
+                experience: '5 years',
+                matches: '45',
+                goals: '20 clean sheets',
+                image: 'public/image/imgShow-1.jpg'
+            },
+            2: {
+                name: 'Ra You',
+                position: 'ខ្សែប្រយុទ្ឌ',
+                number: '2',
+                age: '27',
+                nationality: 'Spain',
+                experience: '7 years',
+                matches: '89',
+                goals: '5',
+                image: 'public/image/imgShow-2.jpg'
+            },
+            3: {
+                name: 'David',
+                position: 'ខ្សែប្រយុទ្ឌ',
+                number: '3',
+                age: '24',
+                nationality: 'France',
+                experience: '4 years',
+                matches: '67',
+                goals: '12',
+                image: 'public/image/imgShow-3.jpg'
+            },
+            4: {
+                name: 'Hong Chhay',
+                position: 'ខ្សែបម្រើ',
+                number: '4',
+                age: '23',
+                nationality: 'Brazil',
+                experience: '3 years',
+                matches: '56',
+                goals: '34',
+                image: 'public/image/imgShow-4.jpg'
+            },
+            5: {
+                name: 'Ma Neth',
+                position: 'ខ្សែប្រយុទ្ធ',
+                number: '5',
+                age: '23',
+                nationality: 'Brazil',
+                experience: '3 years',
+                matches: '56',
+                goals: '34',
+                image: 'public/image/imgShow-5.jpg'
+            },
+            6: {
+                name: 'Na roth',
+                position: 'ខ្សែប្រយុទ្ធ',
+                number: '6',
+                age: '23',
+                nationality: 'Brazil',
+                experience: '3 years',
+                matches: '56',
+                goals: '34',
+                image: 'public/image/imgShow-6.jpg'
+            },
+            7: {
+                name: 'Ly Meng',
+                position: 'ខ្សែប្រយុទ្ធ',
+                number: '7',
+                age: '23',
+                nationality: 'Brazil',
+                experience: '3 years',
+                matches: '56',
+                goals: '34',
+                image: 'public/image/imgShow-7.jpg'
+            },
+            8: {
+                name: 'Kim Leng',
+                position: 'អ្នកចាំទី',
+                number: '8',
+                age: '23',
+                nationality: 'Brazil',
+                experience: '3 years',
+                matches: '56',
+                goals: '34',
+                image: 'public/image/imgShow-8.jpg'
+            }
+        };
+
+        function showPlayerDetails(playerId) {
+            const player = playerData[playerId];
+            document.getElementById('modal-player-name').textContent = player.name;
+            document.getElementById('modal-player-position').textContent = player.position;
+            document.getElementById('modal-player-number').textContent = player.number;
+            document.getElementById('modal-player-age').textContent = player.age;
+            document.getElementById('modal-player-nationality').textContent = player.nationality;
+            document.getElementById('modal-player-experience').textContent = player.experience;
+            document.getElementById('modal-player-matches').textContent = player.matches;
+            document.getElementById('modal-player-goals').textContent = player.goals;
+            document.getElementById('modal-player-image').src = player.image;
+            document.getElementById('player-modal').classList.remove('hidden');
+        }
+
+        function closePlayerDetails() {
+            document.getElementById('player-modal').classList.add('hidden');
+        }
+    </script>
+</body>
+</html>
