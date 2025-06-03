@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>About - Football Team</title>
+</head>
+<body class="bg-gray-100">
+    <!-- Stylish Navbar -->
+    <nav class="bg-gradient-to-r from-blue-400 to-blue-700 shadow-lg sticky top-0 z-50">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex items-center">
+                    <a class="flex-shrink-0 flex items-center" href="#">
+                        <img class="h-10 w-10 mr-2" src="public/image/logo.png" alt="Logo">
+                        <span class="text-white font-bold text-lg">Mystery Empire</span>
+                    </a>
+                    <div class="hidden md:block">
+                        <div class="ml-10 flex items-baseline space-x-4">
+                            <a href="index.html" class="text-blue-200 hover:bg-green-600 hover:text-white px-3 py-2 rounded-md text-sm font-medium transition duration-300">Home</a>
+                            <a href="players.html" class="text-blue-200 hover:bg-green-600 hover:text-white px-3 py-2 rounded-md text-sm font-medium transition duration-300">Players</a>
+                            <a href="history.html" class="text-blue-200 hover:bg-green-600 hover:text-white px-3 py-2 rounded-md text-sm font-medium transition duration-300">History</a>
+                            <a href="schedule.html" class="text-blue-200 hover:bg-green-600 hover:text-white px-3 py-2 rounded-md text-sm font-medium transition duration-300">Schedule</a>
+                            <a href="about.html" class="text-white hover:bg-green-600 px-3 py-2 rounded-md text-sm font-medium transition duration-300">About</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Mobile menu button -->
+                <div class="-mr-2 flex md:hidden">
+                    <button type="button" class="mobile-menu-button inline-flex items-center justify-center p-2 rounded-md text-blue-200 hover:text-white hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white transition duration-300">
+                        <span class="sr-only">Open main menu</span>
+                        <svg class="block h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile menu -->
+        <div class="mobile-menu hidden md:hidden">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-blue-800">
+                <a href="index.html" class="text-blue-200 block px-3 py-2 rounded-md text-base font-medium hover:bg-blue-600 hover:text-white transition duration-300">Home</a>
+                <a href="players.html" class="text-blue-200 block px-3 py-2 rounded-md text-base font-medium hover:bg-blue-600 hover:text-white transition duration-300">Players</a>
+                <a href="history.html" class="text-blue-200 block px-3 py-2 rounded-md text-base font-medium hover:bg-blue-600 hover:text-white transition duration-300">History</a>
+                <a href="schedule.html" class="text-blue-200 block px-3 py-2 rounded-md text-base font-medium hover:bg-blue-600 hover:text-white transition duration-300">Schedule</a>
+                <a href="about.html" class="text-white block px-3 py-2 rounded-md text-base font-medium hover:bg-blue-600 transition duration-300">About</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="max-w-6xl mx-auto px-4 py-8">
+        <!-- Team Overview Section -->
+        <section class="mb-12">
+            <h1 class="text-4xl font-bold text-center text-gray-800 mb-8">About Mystery Empire</h1>
+            <div class="bg-white rounded-lg shadow-lg p-8">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+                    <div>
+                        <img src="../football/public/image/logo.png" alt="Team Logo" class="w-full max-w-md mx-auto rounded-lg shadow-md">
+                    </div>
+                    <div>
+                        <h2 class="text-2xl font-bold text-gray-800 mb-4">Our Story</h2>
+                        <p class="text-gray-600 mb-4">Mystery Empire is a professional football team founded with the vision of nurturing young talent and promoting excellence in football. Our journey began with a passion for the beautiful game and a commitment to developing skilled players who embody the spirit of teamwork and sportsmanship.</p>
+                        <p class="text-gray-600">Based in the heart of the city, we've grown from humble beginnings to become a respected name in local football, with aspirations to compete at higher levels while maintaining our core values of integrity, dedication, and community engagement.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Mission and Values Section -->
+        <section class="mb-12">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-white rounded-lg shadow-lg p-6">
+                    <div class="text-blue-600 text-4xl mb-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-2">Our Mission</h3>
+                    <p class="text-gray-600">To develop and nurture football talent while promoting the values of sportsmanship, teamwork, and excellence both on and off the field.</p>
+                </div>
+                <div class="bg-white rounded-lg shadow-lg p-6">
+                    <div class="text-green-600 text-4xl mb-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-2">Our Values</h3>
+                    <p class="text-gray-600">We believe in integrity, dedication, respect, and continuous improvement. These core values guide every decision we make and every game we play.</p>
+                </div>
+                <div class="bg-white rounded-lg shadow-lg p-6">
+                    <div class="text-yellow-600 text-4xl mb-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v13m0-13V6a2 2 0 112 2h-2zm0 0V5.5A2.5 2.5 0 109.5 8H12zm-7 4h14M5 12a2 2 0 110-4h14a2 2 0 110 4M5 12v7a2 2 0 002 2h10a2 2 0 002-2v-7" />
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-2">Our Goals</h3>
+                    <p class="text-gray-600">To achieve excellence in competitive football while fostering a strong community connection and developing the next generation of football talent.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Information Section -->
+        <section class="mb-12">
+            <div class="bg-white rounded-lg shadow-lg p-8">
+                <h2 class="text-2xl font-bold text-gray-800 mb-6">Contact Information</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div>
+                        <h3 class="text-lg font-semibold text-gray-800 mb-4">Get in Touch</h3>
+                        <div class="space-y-3">
+                            <p class="flex items-center text-gray-600">
+                                <svg class="h-5 w-5 mr-3 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                                </svg>
+                                info@mysteryempire.com
+                            </p>
+                            <p class="flex items-center text-gray-600">
+                                <svg class="h-5 w-5 mr-3 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+                                </svg>
+                                (123) 456-7890
+                            </p>
+                            <p class="flex items-center text-gray-600">
+                                <svg class="h-5 w-5 mr-3 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                                </svg>
+                                123 Stadium Street, Football City, FC 12345
+                            </p>
+                        </div>
+                    </div>
+                    <div>
+                        <h3 class="text-lg font-semibold text-gray-800 mb-4">Training Facility</h3>
+                        <div class="space-y-3">
+                            <p class="text-gray-600">Our state-of-the-art training facility is equipped with:</p>
+                            <ul class="list-disc list-inside text-gray-600 space-y-2">
+                                <li>Professional-grade football pitch</li>
+                                <li>Modern fitness center</li>
+                                <li>Recovery and rehabilitation center</li>
+                                <li>Video analysis room</li>
+                                <li>Player lounge and meeting rooms</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-8">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4">About Us</h3>
+                    <p class="text-gray-400">Mystery Empire is a professional football team committed to excellence and developing young talent.</p>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="index.html" class="text-gray-400 hover:text-white">Home</a></li>
+                        <li><a href="players.html" class="text-gray-400 hover:text-white">Players</a></li>
+                        <li><a href="history.html" class="text-gray-400 hover:text-white">History</a></li>
+                        <li><a href="schedule.html" class="text-gray-400 hover:text-white">Schedule</a></li>
+                        <li><a href="about.html" class="text-gray-400 hover:text-white">About</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Contact Us</h3>
+                    <p class="text-gray-400">Email: info@mysteryempire.com</p>
+                    <p class="text-gray-400">Phone: (123) 456-7890</p>
+                </div>
+            </div>
+            <div class="mt-8 pt-8 border-t border-gray-700 text-center text-gray-400">
+                <p>&copy; 2024 Mystery Empire. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        const mobileMenuButton = document.querySelector('.mobile-menu-button');
+        const mobileMenu = document.querySelector('.mobile-menu');
+
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>
